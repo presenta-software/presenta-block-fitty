@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PresentaBlockFitty</title>
+    <script src="../dist/presenta-block-fitty.min.js"></script>
+
+    <style>
+        #wrapper{
+            width: 500px;
+            height: 400px;
+            border:1px solid red;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        }
+
+        high, i{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper"></div>
+
+    <script>
+        var block = {
+            type: 'fitty',
+            width: '90',
+            linefactor: 0.8,
+            text: `WELCOME
+PRESENTA
+LIBRARY`
+        }
+        new PresentaBlockFitty(document.querySelector('#wrapper'), block)
+    </script>
+</body>
+</html>
