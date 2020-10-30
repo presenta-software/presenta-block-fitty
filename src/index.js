@@ -1,7 +1,7 @@
 import css from './style.css'
 import fitty from 'fitty'
 
-const block = function (el, config, sceneConfig, rootElement, projectConfig) {
+const block = function (el, config) {
   const rnd = Math.random() + ''
   const last = rnd.split('.')[1]
   const sandbox = 'sandfit' + last
