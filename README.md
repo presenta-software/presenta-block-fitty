@@ -4,55 +4,24 @@
 
 This block renders a text string using the [Fitty library](https://github.com/rikschennink/fitty) under the hood.
 
-## Installation
+## Documentation
 
-Please read the installation istructions for official plugins [here](https://lib.presenta.cc/extend/#install-an-official-plugin) using this unique identifier: `block-fitty`
+Full documentation can be found [here](https://lib.presenta.cc/plugins/blocks/fitty).
 
-## Usage
+## Contribute
 
-To configure this block use this setting:
+### Development
 
-```js
-{
-	type: 'fitty',
-	text: `Line1
-Line2
-Line3`
-}
-```
+To start a development session:
 
-or the equivalent version:
+	npm start
 
-```js
-{
-	type: 'fitty',
-	text: 'Line1\nLine2\nLine3'
-}
-```
+To build a release:
 
-To emphatize a specific word, use bold variation:
+	npm run build
 
-```js
-{
-	type: 'fitty',
-	text: 'Line1\n<b>Line2</b>\nLine3'
-}
-```
+## Licence
 
-| Prop name  | Description                                                  | Default value | Possible values                        |
-| ---------- | ------------------------------------------------------------ | ------------- | -------------------------------------- |
-| type       | Define this block type **(required)**                        |               | fitty                                  |
-| text       | A text string, optionally with HTML inline tags, with carriage returns to separate **(required)** |               | String                                 |
-| width      | The width of the text block expressed in % of the container  | 100           | A number between 0 and 100             |
-| linefactor | A multiplicator factor to affect the line height between text lines | 0.9           | Any number, likely between 0.5 and 1.2 |
-|            |                                                              |               |                                        |
+This plugin is released under the [3-Clause BSD license](LICENSE).
 
-## Development
-
-Run the watcher:
-
-    npm start
-
-and the local webserver
-
-    npm run test
+Copyright © 2020 Fabio Franchino, [https://fabiofranchino.com](https://fabiofranchino.com)
