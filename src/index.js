@@ -13,9 +13,10 @@ const block = function (el, config) {
 
     const heightFactor = config.linefactor || 0.8
     const contWidth = config.width || 100
+    const uppercase = config.uppercase ? css.uppercase : null
 
     const cont = document.createElement('div')
-    cont.classList.add(css.prestyle)
+    cont.classList.add(css.prestyle, uppercase)
     cont.style.width = contWidth + '%'
 
     const arr = config.text.split('\n')
@@ -47,7 +48,6 @@ const block = function (el, config) {
           el.style.lineHeight = e.detail.newValue * heightFactor + 'px'
           f.freeze()
           cnt++
-          console.log(cnt)
           if (cnt >= fitters.length) {
             const ch = cont.getBoundingClientRect()
 

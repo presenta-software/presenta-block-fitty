@@ -17,6 +17,10 @@
 
 }
 
+.uppercase .fit{
+    text-transform: uppercase;
+}
+
 .prestyle{
     box-sizing: border-box;
     text-align: center;
