@@ -38,3 +38,8 @@
 .fit strong{
     color: var(--colorAccent);
 }
+
+.fitty mark{
+    background: var(--colorAccent);
+    color: var(--colorBack);
+}
